@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.13</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.aimanager</groupId>
+    <artifactId>ai-agent-graph</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>ai-agent-graph</name>
+    <description>AI Agents services parent</description>
+
+    <properties>
+        <java.version>8</java.version>
+        <spring-boot.version>2.7.13</spring-boot.version>
+        <spring.boot.maven.plugin.version>3.8.1</spring.boot.maven.plugin.version>
+    </properties>
+
+    <modules>
+        <module>shared-layer</module>
+        <!-- Add all the modules here -->
+        <module>graph-aimanager-service</module>
+        <module>graph-builder-rest</module>
+        <!-- graph agent modules -->
+        <module>ai-agent-local-cassandra</module>
+        <module>shared-layer-node</module>
+        <module>agent-memory</module>
+        <module>graph-app-rest</module>
+        <!-- chat agent modules -->
+        <module>chat-shared-layer</module>
+        <module>chat-storage</module>
+        <module>graph-chat-rest</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+</project>

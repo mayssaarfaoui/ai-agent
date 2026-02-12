@@ -1,0 +1,9 @@
+url: "https://testing.teamboost.ai/api/ews/start-soon"
+headers:
+  accept: "application/json"
+  teamboost-api-version: "1.1.0"
+  authorization: "ewstoken:271f211613807ed53f49912d8c3da2084a669a5c"
+queryParams:
+  size: "10"
+  page: "1"
+  #organization_id: "590789"

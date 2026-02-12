@@ -1,0 +1,8 @@
+url: "https://alpha.teamboost.ai/teamboost-org/organization-team/fetch-members"
+headers:
+  accept: "application/json"
+  teamboost-api-version: "1.0.0"
+queryParams:
+  size: "10"
+  page: "1"
+  #organizationId: "590789"
