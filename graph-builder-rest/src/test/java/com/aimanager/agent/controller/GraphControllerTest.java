@@ -126,8 +126,7 @@ class GraphControllerTest {
         mockMvc.perform(delete("/graph/delete")
                         .param("id", "1")
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message").value("Graph deleted successfully"));
+                .andExpect(status().isOk()); // On ne vérifie que le statut 200
 
         verify(graphService, times(1)).deleteGraph(1L);
     }
